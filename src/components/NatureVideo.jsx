@@ -1,6 +1,3 @@
-import React from "react";
-import NeturalVideo from "../assets/Netural30sec.mp4";
-
 function NatureVideo() {
   return (
     <section id="nature-video" className="page-section w-full min-h-screen h-auto md:h-screen flex flex-col bg-[#F8F9FA] overflow-visible md:overflow-hidden">
@@ -12,7 +9,7 @@ function NatureVideo() {
           muted
           playsInline
         >
-          <source src={NeturalVideo} type="video/mp4" />
+          <source src="/videos/Netural30sec.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center pointer-events-none px-4">
           <h2 className="text-white text-3xl sm:text-5xl md:text-7xl font-bold uppercase tracking-wider drop-shadow-2xl text-center">

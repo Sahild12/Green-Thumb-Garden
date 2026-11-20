@@ -1,9 +1,8 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import aboutbg from "../assets/bg-about.jpg";
 import img2 from "../assets/page2-2.png";
 import Bleft from "../assets/video-thumnel.jpg";
 import Bright from "../assets/bootom-banner.jpg";
-import Video1 from "../assets/Plant-Cinematic-Video.mp4";
 
 function About({ onNavigate }) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -95,7 +94,7 @@ function About({ onNavigate }) {
             )}
 
             <video ref={videoRef} className="w-full h-full object-cover" onEnded={() => setIsPlaying(false)}>
-              <source src={Video1} type="video/mp4" />
+              <source src="/videos/Plant-Cinematic-Video.mp4" type="video/mp4" />
             </video>
           </div>
 

@@ -107,6 +107,8 @@ Make sure you have [Node.js](https://nodejs.org) (v18 or higher recommended) ins
    ```
    The built static assets will be located in the `dist/` directory.
 
+The MP4 files are stored with Git LFS. The `predev` and `prebuild` steps prepare them in `public/videos/`; if the checkout contains LFS pointer files, the script downloads the original videos from this public GitHub repository before starting Vite or building. Keep the GitHub repository public for Vercel builds to retrieve the videos.
+
 ---
 
 ## 📷 Project Screenshots & Preview
